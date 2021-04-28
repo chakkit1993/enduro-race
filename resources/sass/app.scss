@@ -1,0 +1,36 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+$fa-font-path:"../webfonts";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~admin-lte/dist/css/adminlte.css';
+
+//Fontawesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+//dataTable bs4
+//  @import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+//  @import '~datatables.net-buttons-bs4/css/buttons.bootstrap4.css';
+
+ @import '~datatables.net-bs4/css/dataTables.bootstrap4.min.css';
+ @import '~datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css';
+ @import '~datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css';
+
+
+// Bootstrap Select
+@import '~bootstrap-select/dist/css/bootstrap-select.css';
+
+// Bootstrap Datepicker
+@import '~bootstrap-datepicker/dist/css/bootstrap-datepicker.css';
+
+
+
+
+
+// Bootstrap sweetalert2
+ @import '~sweetalert2/dist/sweetalert2';

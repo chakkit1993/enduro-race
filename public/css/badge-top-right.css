@@ -1,0 +1,27 @@
+
+.badge_top_right{
+    z-index: 2;
+    position: absolute;
+    top: -10px;
+    right: 50%;
+    padding: 3px 6px;
+    opacity: 0.95;
+    background-color: #ff0000;
+
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+

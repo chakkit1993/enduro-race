@@ -1,0 +1,1594 @@
+{
+
+	"data" :[
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 1,
+    "time": "12:40:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 2,
+    "time": "12:46:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 3,
+    "time": "12:49:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 4,
+    "time": "12:51:58"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 5,
+    "time": "12:52:27"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 6,
+    "time": "13:01:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 7,
+    "time": "13:03:46"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 8,
+    "time": "13:05:08"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 9,
+    "time": "13:08:47"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 10,
+    "time": "13:09:37"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 11,
+    "time": "13:10:06"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 12,
+    "time": "13:11:52"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 13,
+    "time": "13:12:29"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 14,
+    "time": "13:12:34"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 15,
+    "time": "13:16:08"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 16,
+    "time": "13:18:56"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 17,
+    "time": "13:20:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 18,
+    "time": "13:20:35"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 19,
+    "time": "13:21:03"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 20,
+    "time": "13:21:17"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 21,
+    "time": "13:21:34"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 22,
+    "time": "13:22:06"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 23,
+    "time": "13:22:48"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 24,
+    "time": "13:23:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 25,
+    "time": "13:26:09"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 26,
+    "time": "13:27:39"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 27,
+    "time": "13:29:16"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 28,
+    "time": "13:29:36"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 29,
+    "time": "13:32:04"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 30,
+    "time": "13:34:06"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 31,
+    "time": "13:34:30"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 32,
+    "time": "13:36:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 33,
+    "time": "13:37:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 34,
+    "time": "13:38:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 35,
+    "time": "13:40:31"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 36,
+    "time": "13:41:08"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 37,
+    "time": "13:41:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 38,
+    "time": "13:45:30"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 39,
+    "time": "13:48:07"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 40,
+    "time": "13:48:58"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 41,
+    "time": "13:54:50"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 42,
+    "time": "13:55:38"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 43,
+    "time": "13:56:03"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 44,
+    "time": "13:56:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 45,
+    "time": "13:57:29"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 46,
+    "time": "13:57:37"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 47,
+    "time": "14:01:08"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 48,
+    "time": "14:01:10"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 49,
+    "time": "14:01:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 50,
+    "time": "14:04:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 51,
+    "time": "14:06:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 52,
+    "time": "14:06:57"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 53,
+    "time": "14:10:01"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 54,
+    "time": "14:10:14"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 55,
+    "time": "14:10:42"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 56,
+    "time": "14:11:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 57,
+    "time": "14:11:54"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 58,
+    "time": "14:14:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 59,
+    "time": "14:15:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 60,
+    "time": "14:15:57"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 61,
+    "time": "14:17:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 62,
+    "time": "14:20:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 63,
+    "time": "14:20:25"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 64,
+    "time": "14:21:07"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 65,
+    "time": "14:22:54"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 66,
+    "time": "14:24:18"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 67,
+    "time": "14:25:56"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 68,
+    "time": "14:26:32"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 69,
+    "time": "14:27:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 70,
+    "time": "14:27:16"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 71,
+    "time": "14:29:00"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 72,
+    "time": "14:29:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 73,
+    "time": "14:30:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 74,
+    "time": "14:30:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 75,
+    "time": "14:30:52"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 76,
+    "time": "14:33:26"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 77,
+    "time": "14:34:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 78,
+    "time": "14:36:47"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 79,
+    "time": "14:37:09"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 80,
+    "time": "14:38:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 81,
+    "time": "14:41:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 82,
+    "time": "14:41:48"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 83,
+    "time": "14:42:53"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 84,
+    "time": "14:43:43"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 85,
+    "time": "14:45:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 86,
+    "time": "14:47:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 87,
+    "time": "14:48:15"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 88,
+    "time": "14:48:21"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 89,
+    "time": "14:48:57"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 90,
+    "time": "14:49:00"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 91,
+    "time": "14:49:23"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 92,
+    "time": "14:49:28"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 93,
+    "time": "14:50:20"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 94,
+    "time": "14:51:17"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 95,
+    "time": "14:52:26"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 96,
+    "time": "14:53:07"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 97,
+    "time": "14:53:39"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 98,
+    "time": "14:53:50"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 99,
+    "time": "14:54:55"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 100,
+    "time": "14:55:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 101,
+    "time": "14:57:43"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 102,
+    "time": "14:58:03"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 103,
+    "time": "14:58:04"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 104,
+    "time": "14:58:08"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 105,
+    "time": "14:58:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 106,
+    "time": "14:58:38"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 107,
+    "time": "14:58:57"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 108,
+    "time": "15:00:12"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 109,
+    "time": "15:00:26"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 110,
+    "time": "15:00:31"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 111,
+    "time": "15:00:36"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 112,
+    "time": "15:01:01"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 113,
+    "time": "15:01:11"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 114,
+    "time": "15:02:42"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 115,
+    "time": "15:02:54"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 116,
+    "time": "15:02:59"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 117,
+    "time": "15:03:04"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 118,
+    "time": "15:03:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 119,
+    "time": "15:04:41"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 120,
+    "time": "15:06:06"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 121,
+    "time": "15:06:12"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 122,
+    "time": "15:07:15"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 123,
+    "time": "15:07:31"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 124,
+    "time": "15:08:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 125,
+    "time": "15:09:03"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 126,
+    "time": "15:09:19"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 127,
+    "time": "15:09:21"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 128,
+    "time": "15:09:30"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 129,
+    "time": "15:09:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 130,
+    "time": "15:11:01"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 131,
+    "time": "15:13:20"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 132,
+    "time": "15:13:50"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 133,
+    "time": "15:14:35"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 134,
+    "time": "15:14:39"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 135,
+    "time": "15:15:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 136,
+    "time": "15:16:04"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 137,
+    "time": "15:18:33"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 138,
+    "time": "15:19:09"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 139,
+    "time": "15:19:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 140,
+    "time": "15:20:10"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 141,
+    "time": "15:21:00"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 142,
+    "time": "15:22:56"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 143,
+    "time": "15:23:01"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 144,
+    "time": "15:23:09"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 145,
+    "time": "15:23:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 146,
+    "time": "15:23:42"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 147,
+    "time": "15:23:48"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 148,
+    "time": "15:24:32"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 149,
+    "time": "15:26:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 150,
+    "time": "15:27:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 151,
+    "time": "15:29:18"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 152,
+    "time": "15:30:45"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 153,
+    "time": "15:31:06"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 154,
+    "time": "15:31:43"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 155,
+    "time": "15:32:53"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 156,
+    "time": "15:33:25"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 157,
+    "time": "15:33:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 158,
+    "time": "15:37:30"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 159,
+    "time": "15:39:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 160,
+    "time": "15:40:16"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 161,
+    "time": "15:40:21"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 162,
+    "time": "15:41:20"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 163,
+    "time": "15:42:55"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 164,
+    "time": "15:43:59"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 165,
+    "time": "15:44:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 166,
+    "time": "15:44:55"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 167,
+    "time": "15:45:53"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 168,
+    "time": "15:47:26"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 169,
+    "time": "15:48:15"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 170,
+    "time": "15:48:37"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 171,
+    "time": "15:49:10"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 172,
+    "time": "15:49:16"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 173,
+    "time": "15:49:29"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 174,
+    "time": "15:54:46"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 175,
+    "time": "15:56:36"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 176,
+    "time": "15:56:52"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 177,
+    "time": "15:58:56"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 178,
+    "time": "15:59:47"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 179,
+    "time": "16:00:42"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 180,
+    "time": "16:00:51"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 181,
+    "time": "16:01:57"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 182,
+    "time": "16:02:16"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 183,
+    "time": "16:02:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 184,
+    "time": "16:02:29"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 185,
+    "time": "16:02:42"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 186,
+    "time": "16:02:54"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 187,
+    "time": "16:05:09"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 188,
+    "time": "16:06:40"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 189,
+    "time": "16:08:41"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 190,
+    "time": "16:10:01"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 191,
+    "time": "16:11:35"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 192,
+    "time": "16:11:56"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 193,
+    "time": "16:14:52"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 194,
+    "time": "16:17:44"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 195,
+    "time": "16:19:01"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 196,
+    "time": "16:19:18"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 197,
+    "time": "16:21:20"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 198,
+    "time": "16:22:00"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 199,
+    "time": "16:22:14"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 200,
+    "time": "16:22:53"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 201,
+    "time": "16:25:33"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 202,
+    "time": "16:31:10"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 203,
+    "time": "16:32:08"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 204,
+    "time": "16:32:13"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 205,
+    "time": "16:34:46"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 206,
+    "time": "16:36:45"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 207,
+    "time": "16:38:11"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 208,
+    "time": "16:39:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 209,
+    "time": "16:42:19"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 210,
+    "time": "16:42:24"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 211,
+    "time": "16:43:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 212,
+    "time": "16:44:09"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 213,
+    "time": "16:44:18"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 214,
+    "time": "16:44:23"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 215,
+    "time": "16:45:22"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 216,
+    "time": "16:46:41"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 217,
+    "time": "16:46:53"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 218,
+    "time": "16:48:02"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 219,
+    "time": "16:49:15"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 220,
+    "time": "16:49:19"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 221,
+    "time": "16:49:53"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 222,
+    "time": "16:50:54"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 223,
+    "time": "16:52:32"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 224,
+    "time": "16:53:27"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 225,
+    "time": "16:53:55"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 226,
+    "time": "16:36:45"
+  },
+  {
+    "tournament": "TM05",
+    "stage": "S1",
+    "point": "PC0",
+    "rfid": 227,
+    "time": "16:37:45"
+  }
+]
+}
