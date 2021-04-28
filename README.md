@@ -95,12 +95,15 @@
 
 ## Step 6  Create Docker Image
 
-    gcloud builds submit --tag gcr.io/PROJECT-ID/helloworld
+    gcloud builds submit --tag gcr.io/enduro-race-project/enduro-race
+
+    ##PROJECT-ID =>  enduro-race-project
     
 ## Step 7 Deploying to Cloud Run
     
-    gcloud run deploy --image gcr.io/PROJECT-ID/helloworld --platform managed
+    gcloud run deploy --image gcr.io/enduro-race-project/enduro-race --platform managed
 
+ ##PROJECT-ID =>  enduro-race-project
     
 ## Step 8 Add Admin LTE
     update 16/12/2020  Admin LTE
