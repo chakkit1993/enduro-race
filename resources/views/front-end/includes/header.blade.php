@@ -22,7 +22,7 @@
           <li><a href="#supporters">Sponsors</a></li>
 
           <!-- <li><a href="#contact">Contact</a></li> -->
-          <li><a href="{{ route('live-online.index') }}">Live Score</a></li>
+          <li><a href="{{ route('live-online.index') }}">Live</a></li>
         @if (Route::has('login'))
                
             @auth

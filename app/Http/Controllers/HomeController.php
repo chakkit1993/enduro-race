@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Live;
 use App\Tournament;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -24,8 +25,10 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
+    {   // upload picture to google cloud storage
+        $disk = Storage::disk('gcs');
         return view('home')
+        ->with('disk',  $disk )
         ->with('tournaments', Tournament::all()->sortByDesc('id'))   
         ->with('live', Live::all()->first());
     }

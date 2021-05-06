@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection as SupportCollection;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Storage;
 
 class TournamentsController extends Controller
 {
@@ -24,8 +25,10 @@ class TournamentsController extends Controller
     public function index()
     {
       
-
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
         return view('admin.tournaments.index')
+        ->with(  'disk' , $disk)
         ->with('tournaments', Tournament::all()->sortByDesc('id'))
         ->with('live', Live::all()->first());
     }
@@ -37,9 +40,12 @@ class TournamentsController extends Controller
         $players = $division->players()->where('tour_id', $tournament->id)->get();
         //dd($players);
       
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
 
        // dd( $division->name);
        return view('admin.tournaments.playersBydivision-table')
+       ->with(  'disk' , $disk)
        ->with('tournament',$tournament)
        ->with('division', $division)
        ->with('players', $players);
@@ -58,15 +64,22 @@ class TournamentsController extends Controller
 
        // dd( $division->name);
    
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
+            
         return view('admin.leaderboards.index')
+        ->with(  'disk' , $disk)
         ->with('tournament',$tournament);
     }
 
     public function  newHome(Tournament $tournament)
     {
       
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
 
         return view('admin.tournaments.new-home')
+        ->with(  'disk' , $disk)
         ->with('tournament',$tournament)
         ->with('divisions', Division::all()->where('tour_id', $tournament->id));
     }
@@ -91,7 +104,15 @@ class TournamentsController extends Controller
     {
       //  dd($request);
          // insert data to db
-         $image = 'image_path';//$request->image->store('posts');
+
+        // upload picture to google cloud storage
+        $disk = Storage::disk('gcs');
+        // create new path 
+        $disk->put('images',  $request->file('image'));
+        $path = $request->file('image')->store('images');
+
+
+         $image = $path;//$request->image->store('posts');
          $ldate = date('Y-m-d H:i:s');
       
         // dd($code);
@@ -187,7 +208,10 @@ class TournamentsController extends Controller
         //    dd($execution_time);
       
        
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
         return view('admin.tournaments.details')
+        ->with(  'disk' , $disk)
         ->with('tournament',$tournament)
          ->with('divisions', Division::all()->where('tour_id', $tournament->id))
          ->with('players',  $players)
@@ -241,11 +265,14 @@ class TournamentsController extends Controller
             ]));
         }
         
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
         $tournament->update(([
             'active'=>true
         ]));
 
         return view('home')
+        ->with(  'disk' , $disk)
         ->with('tournaments', Tournament::all()->sortByDesc('id'))
         ->with('live', Live::all()->first());
     }
@@ -261,15 +288,33 @@ class TournamentsController extends Controller
      */
     public function update(UpdateTournamentRequest $request,Tournament $tournament)
     {
-        //dd($request->all());
+        //dd($tournament->img);
+
+    
+    
+
+            // upload picture to google cloud storage
+            $disk = Storage::disk('gcs');
+            // create new path 
+            $disk->put('images',  $request->file('image'));
+            $path = $request->file('image')->store('images');
+
+            // get url to file
+            //$url = $disk->url($path);
+            // dlete old path image
+
+           $disk->delete($tournament->img);
+
             $tournament->update(([
                 'name'=>$request->name,
                 'address'=>$request->address,
                 'date'=>$request->date,
-                'description'=>$request->description
+                'description'=>$request->description,
+                'img'=>$path
             ]));
-    
-            Session()->flash('success','แก้ไขข้อมูลสำเร็จ');
+
+
+           
 
             $viewsLeaderboard = new Collection();
             $players = Player::all()->where('tour_id', $tournament->id)->sortBy('no');
@@ -285,9 +330,10 @@ class TournamentsController extends Controller
         
                }
 
-
+               Session()->flash('success','แก้ไขข้อมูลสำเร็จ');
             //return redirect(route('tournaments.index'));
             return view('admin.tournaments.details')
+                ->with(  'disk' , $disk)
                  ->with('tournament',$tournament)
                  ->with('divisions', Division::all()->where('tour_id', $tournament->id))
                 ->with('players',  $players)
@@ -305,11 +351,20 @@ class TournamentsController extends Controller
     {
         //$tournament->tags()->detach($tournament->post_id);
         $count =  Player::all()->where('tour_id', $tournament->id)->count();
-        //dd($x);
-        if(   $count = Player::all()->where('tour_id', $tournament->id)->count() != 0 ){
+      
+        if(   $count  != 0 ){
             Session()->flash('error', 'กรุณาลบข้อมูลผู้เข้าร่วมการแข่งขัน');
             return redirect(route('home'));
         }else{
+
+
+            
+
+              // upload picture to google cloud storage
+              $disk = Storage::disk('gcs');
+              // dlete old path image
+              $disk->delete($tournament->img);
+
 
 
            $divisions =  Division::all()->where('tour_id', $tournament->id);

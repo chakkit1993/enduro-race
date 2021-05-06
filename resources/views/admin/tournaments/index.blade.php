@@ -57,7 +57,7 @@
         </section>
     
 
-    @include('admin.tournaments.add-tournament')
+    @include('admin.tournaments.modal.add-tournament')
 
 
 

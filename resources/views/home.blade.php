@@ -78,10 +78,11 @@
                 <i class="fas fa-eye-slash"></i></a>
                 @endif
               
-
+                <a href="" class="btn btn-info float-right text-white">
+                <i class="fas fa-copy"></i></a>
 
               </div>
-              <img src="/images/tournament/1.jpg" class="card-img-top" alt="..." style="width: 100%;  height: 10vw;    object-fit: scale-down; ">
+              <img src="{{$disk->url($tournament->img)}}" class="card-img-top" alt="..." style="width: 100%;  height: 10vw;    object-fit: scale-down; ">
               <div class="card-body">
                 <h5 class="card-title">{{$tournament->name}}</h5>
                 <p class="card-text">{{$tournament->description}}</p>
@@ -116,5 +117,5 @@
   </div>
   <!-- container-fluid -->
 </section>
-@include('admin.tournaments.add-tournament')
+@include('admin.tournaments.modal.add-tournament')
 @endsection

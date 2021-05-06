@@ -34,7 +34,8 @@ use Illuminate\Support\Facades\Config;
             <span class="h4">Description : {{$tournament->description}}</span>
             </div>
             <div class="col-md-4 ">
-            <img src="/images/tournament/1.jpg" class="card-img-top" alt="..."    style="width: 100%;  height: 180px;    object-fit: scale-down; "  >
+            
+            <img src="{{$disk->url($tournament->img)}}" class="card-img-top" alt="..."    style="width: 100%;  height: 180px;    object-fit: scale-down; "  >
             </div>
             <div class="col-md-4 ">
             <a id="{{$tournament->id}}" href="#editTournamentsModal" class="btn btn-success editTournaments" data-toggle="modal">
@@ -64,14 +65,13 @@ use Illuminate\Support\Facades\Config;
     
  </div>
 
- @include('admin.tournaments.add-player')
- @include('admin.tournaments.add-division')
- @include('admin.tournaments.edit-player')
- @include('admin.tournaments.edit-division')
- @include('admin.tournaments.edit-tournament')
- @include('admin.tournaments.upload-file-division')
- @include('admin.tournaments.upload-file-player')
- @include('admin.tournaments.create_time_modal')
+ @include('admin.tournaments.modal.add-player')
+ @include('admin.tournaments.modal.add-division')
+ @include('admin.tournaments.modal.edit-division')
+ @include('admin.tournaments.modal.edit-tournament')
+ @include('admin.tournaments.modal.upload-file-division')
+ @include('admin.tournaments.modal.upload-file-player')
+ @include('admin.tournaments.modal.create_time_modal')
 
 
 @endsection

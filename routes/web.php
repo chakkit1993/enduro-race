@@ -8,6 +8,8 @@ use App\Http\Controllers\TournamentsController;
 use App\Http\Controllers\LiveController;
 
 use App\Tournament;
+use Illuminate\Contracts\Cache\Store;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +26,16 @@ Route::get('/', function () {
     return view('front-end.home.home')->with('tournament' , Tournament::where('active', 1)->first());
     //return view('welcome');
 });
+
+// Route::post('/images', function () {
+//    $disk = Storage::disk('gcs');
+
+//    $disk->put('avatars/tests.txt','fileContents');
+//     //return view('welcome');
+// });
+
+Route::get('/updateAvatarIndex', 'UserAvatarController@index');
+Route::post('/updateAvatar', 'UserAvatarController@update');
 
 
 Auth::routes();
