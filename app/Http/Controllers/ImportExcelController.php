@@ -58,7 +58,8 @@ class ImportExcelController extends Controller
       
         // dd( $tournament ->id);
        // return (new DivisionsExport)->download('division.xlsx');
-         return  Excel::download(new PlayersExport($division), 'players.xlsx');
+       $name = $division->name;
+         return  Excel::download(new PlayersExport($division), $name.' playerList.xlsx');
         // return back();
     }
 

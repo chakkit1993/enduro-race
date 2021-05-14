@@ -20,6 +20,6 @@
          
  </div>
 
- @include('admin.tournaments.genaratetime_modal')
+ @include('admin.tournaments.modal.genaratetime_modal')
  
 @endsection

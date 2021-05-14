@@ -6,19 +6,45 @@ use App\Division;
 use App\Player;
 use App\viewPlayers;
 use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\WithEvents;
+use Maatwebsite\Excel\Events\AfterSheet;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Illuminate\Support\Collection;
+use Maatwebsite\Excel\Concerns\WithCustomStartCell;
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
+use Maatwebsite\Excel\Concerns\WithStartRow;
+use Maatwebsite\Excel\Concerns\WithTitle;
 
-class PlayersExport implements FromCollection,WithHeadings
+class PlayersExport implements FromCollection,WithTitle ,WithHeadings,WithStartRow,WithCustomStartCell,WithEvents
 {
     private $division;
     function __construct($param) {
            $this->division = $param;
     }
 
- 
+    /**
+     * @return int
+     */
+    public function startRow(): int
+    {
+        return 2;
+    }
 
-        
+   /**
+     * @return string
+     */
+    public function title(): string
+    {
+        return "Division";
+    }
+/**
+     * @return string
+     */
+    public function startCell(): string
+    {
+        return 'A2';
+    }
+
 
 
 
@@ -63,6 +89,49 @@ class PlayersExport implements FromCollection,WithHeadings
     }
 
     /**
+        * registerEvents    freeze the first row with headings
+        * @return array
+        * @author   liuml  <liumenglei0211@163.com>
+        * @DateTime 2018/11/1  11:19
+        */
+        public function registerEvents(): array
+        {
+            return [
+                AfterSheet::class => function(AfterSheet $event) {
+                    // Merge Cells
+             
+               
+
+                         $m  = 'A1:F1' ; //Merage
+
+                        //$m = 'A'.$n.':'.'E'.$c;
+                       
+                        //   $c = $n+4;
+                        //  $m = 'B'.$n.':'.'B'.$c;
+                        $merage[] = $m;
+                    
+                    //dd($merage);
+                    $event->sheet->getDelegate()->setMergeCells( $merage);
+                    $event->sheet->getDelegate()->setCellValue('A1',  $this->division->name);
+                   // $event->sheet->getDelegate()->setMergeCells(['B1:D2']);
+                    // freeze the pane
+                    //$event->sheet->getDelegate()->freezePane('A4');
+                     // Define the column width
+                    //  $widths = ['A' => 20, 'B' => 50];
+                    //  foreach ($widths as $k => $v) {
+                    //      // Set the column width
+                    //      $event->sheet->getDelegate()->getColumnDimension($k)->setWidth($v);
+                    //  }
+                    // Other style requirements (set border, background color, etc.) handle the macro given in the extension, you can also customize the macro to achieve, see the official website for details
+                   
+                },
+            ];
+        }
+
+
+
+
+    /**
     * @return \Illuminate\Support\Collection
     */
     public function collection()
@@ -73,6 +142,7 @@ class PlayersExport implements FromCollection,WithHeadings
         $views = new Collection();
 
         $n  = 0;
+        //$views = $this->division->name;
         foreach($players as $player){
             //$leaderboard = $player->findLeaderboards($player->id)->where('stage','S1')->first();
             $leaderboards = null;
@@ -135,7 +205,7 @@ class PlayersExport implements FromCollection,WithHeadings
            
         }
         
-        dd(   $views);
+        //dd(   $views);
         return $views ;
 
         //return $this->division->players()->select('name', 'no','tag_id')->findLeaderboards()->get();

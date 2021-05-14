@@ -39,10 +39,10 @@ use Illuminate\Support\Facades\Config;
             </div>
             <div class="col-md-4 ">
             <a id="{{$tournament->id}}" href="#editTournamentsModal" class="btn btn-success editTournaments" data-toggle="modal">
-                    <i class="fa fa-edit"><b>ตั้งค่า</b></i>
+                    <i class="fa fa-edit"><b>แก้ไขข้อมูล</b></i>
                 </a>
-            <button class="btn btn-warning  createtimeModal" data-toggle="modal" data-target="#createtimeModal">
-                <i class="fa fa-horse-head"><b>สร้างตารางเวลา Excel</b></i>
+            <button class="btn btn-danger  createtimeModal" data-toggle="modal" data-target="#createtimeModal">
+                <i class="fa fa-file-download"><b> สร้างตารางเวลา Excel</b></i>
                 
             </button>
 
