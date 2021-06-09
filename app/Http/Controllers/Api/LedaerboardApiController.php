@@ -155,7 +155,10 @@ class LedaerboardApiController extends Controller
 
             $leader->save();
             }
-            $_result = "failed";
+
+            
+         $_result = "failed";
+
         if($result == true){
             $_result = "success";
         }
