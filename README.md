@@ -7,6 +7,7 @@
 
 # Laravel Quickstart
 
+
 ## Quick Installation
 
 ## Step 1 Install Laravel version 7.x
