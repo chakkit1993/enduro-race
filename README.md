@@ -5,7 +5,7 @@
 # Demo Backend 
 ![backend](https://user-images.githubusercontent.com/20787213/121292710-9ae28f00-c914-11eb-9688-bbd9f83f7efd.gif)
 
-# Laravel Quickstart - Basic
+# Laravel Quickstart
 
 ## Quick Installation
 
