@@ -302,14 +302,20 @@ class TournamentsController extends Controller
             // upload picture to google cloud storage
             $disk = Storage::disk('gcs');
             // create new path 
-            $disk->put('images',  $request->file('image'));
-            $path = $request->file('image')->store('images');
 
-            // get url to file
-            //$url = $disk->url($path);
-            // dlete old path image
+            // Old path image
+            $path = $tournament->img;
+            if( $request->hasFile('image')){
+                $disk->put('images',  $request->file('image'));
+                $path = $request->file('image')->store('images');
+    
+                // get url to file
+                //$url = $disk->url($path);
+                // dlete old path image
+    
+               $disk->delete($tournament->img);
+            }
 
-           $disk->delete($tournament->img);
 
             $tournament->update(([
                 'name'=>$request->name,
