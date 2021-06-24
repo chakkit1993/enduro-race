@@ -102,17 +102,23 @@ class TournamentsController extends Controller
      */
     public function store(CreateTournamentRequest $request)
     {
-      //  dd($request);
+        //dd($request->all());
          // insert data to db
 
         // upload picture to google cloud storage
         $disk = Storage::disk('gcs');
         // create new path 
-        $disk->put('images',  $request->file('image'));
-        $path = $request->file('image')->store('images');
+        if($request->hasFile('image')){
+            $disk->put('images',  $request->file('image'));
+            $path = $request->file('image')->store('images');
+            $image = $path;//$request->image->store('posts');
+        }else{
+            $image = public_path('/images/No_picture_available.png');
+        }
+     
+        
 
-
-         $image = $path;//$request->image->store('posts');
+      
          $ldate = date('Y-m-d H:i:s');
       
         // dd($code);
