@@ -25,17 +25,15 @@
       <div class="row">
         <div class="col-lg-6">
           <h2>About The Event</h2>
-          <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-            accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-            est ut optio sequi unde.</p>
+          <p>Enduros are one of the oldest forms of motorcycle competition. Run on a challenging route that includes wooded and desert terrain, more difficult “test” sections are connected with roads, fire roads or easy two-track trail. Enduros can vary greatly across the country, but one thing is certain everywhere: They are one of the most enjoyable, thrilling and fulfilling forms of motorsports competition.</p>
         </div>
         <div class="col-lg-3">
           <h3>Where</h3>
-          <p>Downtown Conference Center, New York</p>
+          <p>Chiang Dao ,Chiang Mai,Thailand</p>
         </div>
         <div class="col-lg-3">
           <h3>When</h3>
-          <p>Monday to Wednesday<br>10-12 December</p>
+          <p>Monday to Wednesday<br>27-29 November 2021</p>
         </div>
       </div>
     </div>
