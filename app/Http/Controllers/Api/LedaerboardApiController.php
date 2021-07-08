@@ -81,7 +81,7 @@ class LedaerboardApiController extends Controller
             $leader = $leaderboard->where('player_id',  $player->id)->first();
             $point =  $request->point;
             switch ($point) {
-                case 'PC0':
+                case 'START':
                     $update_flag = true;
                     $leader['t1']  =  $request->time;
                     $leader['time_pc0']  =   $request->time;
@@ -107,7 +107,7 @@ class LedaerboardApiController extends Controller
                     $leader['time_pc5']  =   $request->time;
                     $leader['pc5'] = 1;
                     break;
-                case 'PC6':
+                case 'FINISH':
                     $update_flag = true;
                     $leader['t2']  =   $request->time;
                     $leader['time_pc6']  =  $request->time;
@@ -213,7 +213,7 @@ class LedaerboardApiController extends Controller
                 $leader = $leaderboard->where('player_id',  $player->id)->first();
                 $point =  $request->data[$i]['point'];
                 switch ($point) {
-                    case 'PC0':
+                    case 'START':
                         $leader['t1']  =  $request->data[$i]['time'];
                         $leader['time_pc0']  =  $request->data[$i]['time'];
                         $leader['pc0'] = 1;
@@ -238,7 +238,7 @@ class LedaerboardApiController extends Controller
                         $leader['time_pc5']  =  $request->data[$i]['time'];
                         $leader['pc5'] = 1;
                         break;
-                    case 'PC6':
+                    case 'FINISH':
                         $leader['t2']  =  $request->data[$i]['time'];
                         $leader['time_pc6']  =  $request->data[$i]['time'];
                         $leader['pc6'] = 1;
