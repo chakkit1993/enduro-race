@@ -41,14 +41,14 @@ class LiveController extends Controller
     public function store(Request $request)
     {
 
-//dd($request->live_link);
+      dd($request->live_link);
 
         Live::create([
             "src" => $request->live_link,
             "active" => true,
         ]);
-
-       return redirect();
+        Session()->flash('success','สร้างข้อมูลสำเร็จ');
+       return redirect(route('home'));
     }
 
     /**
@@ -115,11 +115,12 @@ class LiveController extends Controller
         
         }           
         
-     
+        Session()->flash('success','อัพเดตข้อมูลสำเร็จ');
+        return redirect(route('home'));
 
-        return view('home')
-        ->with('tournaments', Tournament::all()->sortByDesc('id'))   
-        ->with('live', Live::all()->first());
+        // return view('home')
+        // ->with('tournaments', Tournament::all()->sortByDesc('id'))   
+        // ->with('live', Live::all()->first());
     }
 
     /**
