@@ -17,9 +17,9 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('phone');
-            $table->string('no');
-            $table->string('tour_id');
-            $table->string('tag_id');
+            $table->integer('no');
+            $table->integer('tour_id');
+            $table->integer('tag_id');
             $table->string('img');
             $table->string('create_date');
             $table->string('create_by');

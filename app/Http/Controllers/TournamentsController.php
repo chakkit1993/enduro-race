@@ -13,7 +13,9 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection as SupportCollection;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Concerns\ToArray;
 
 class TournamentsController extends Controller
 {
@@ -400,37 +402,41 @@ class TournamentsController extends Controller
     {
 
         $viewsLeaderboard = new Collection();
-     
-       $players = Player::all()->where('tour_id', $tournament->id)->sortBy('no');
+        $players =[];
 
-        
+      // $players = Player::all()->where('tour_id', $tournament->id)->sortBy('no');
+    //    $_players = Player::all();
+        $players = DB::table('players')->where('tour_id', $tournament->id)->orderBy('no')->get();
        $n =  0;
       
-       //dd($request->all());
+       
 
-
+      
        for($x = 0 ; $x< $players->count()  ; $x= $x + $request->BikePerRound ){
-
+        
             for($y = 0 ;$y < $request->BikePerRound ; $y++){
+
+               //dd( $x + $y ,$players);
+
                 if(( $x + $y) <  $players->count() ){
-
-                    $leaderboards =  $players[0]->findLeaderboards($players[$x + $y]->id)->where('stage' , 'S1');
-
+                    $leaderboards = Leaderboard::all()->where('stage' , 'S1')->where('player_id',$players[$x + $y]->id );
+                    // $leaderboards =  $players[0]->findLeaderboards($players[$x + $y]->id)->where('stage' , 'S1');
+                    //dd($leaderboards);
                     $tt1 = strtotime ( $request->s_time )  + ($request->TimePerRound * $n); 
                     $t1 =  date('H:i:s',$tt1);
-             
+                    $debug[] =  $players[$x + $y];
                      foreach($leaderboards as $leaderboard){
                          //geanrate S1 - S5 
                          $leaderboard->t1  =  $t1;
                          $leaderboard->time_pc0  =  $t1;
                          $leaderboard->save();
              
-                        //  $viewsLeaderboard[] =  $leaderboard;
+                          $viewsLeaderboard[] =  $leaderboard;
                      }
                 }
               
 
-                $debug[] =  $x + $y;
+               
             }
    
 
@@ -443,7 +449,7 @@ class TournamentsController extends Controller
        // dd($leaderboard[1]->t1);
        }
   
-      // dd($debug);
+   //dd($debug);
 
         // return redirect(route('tournaments.index'));
         return redirect(route('tournaments.leaderboards' , $tournament->id));

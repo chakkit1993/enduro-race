@@ -116,7 +116,7 @@ class DivisionsController extends Controller
     public function update(UpdateDivisionRequest $request, Division $division)
     {
         $tour_id = $request->tour_id;
-        dd($request->all());
+        //dd($request->all());
      
         $division->update(([
             'name'=>$request->name,
