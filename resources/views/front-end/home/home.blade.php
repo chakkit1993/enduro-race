@@ -33,7 +33,7 @@
         </div>
         <div class="col-lg-3">
           <h3>When</h3>
-          <p>Monday to Wednesday<br>27-29 November 2021</p>
+          <p>Monday to Wednesday<br>27-29 April 2022</p>
         </div>
       </div>
     </div>
@@ -157,7 +157,7 @@
   </section> -->
   @include('front-end.home.Videos-section')
 
-@include('front-end.home.Gallery-section')
+  @include('front-end.home.Gallery-section')
 
   @include('front-end.home.Sponsors-section')
 
