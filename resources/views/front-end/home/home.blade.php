@@ -8,8 +8,8 @@
   ============================-->
 <section id="intro">
   <div class="intro-container wow fadeIn">
-    <h1 class="mb-4 pb-0">Chiang Dao <br><span>Enduro</span> Challenge</h1>
-    <p class="mb-4 pb-0">27 November 2020 , Chiang Dao ,Chiang Mai,Thailand</p>
+    <h1 class="mb-4 pb-0">Doi Chang <br><span>Enduro</span> Challenge</h1>
+    <p class="mb-4 pb-0">1 May 2022 , Doi Chang ,Chiang Rai,Thailand</p>
     <a href="https://www.youtube.com/watch?v=rVu0zmCyy6E" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
     <a href="#about" class="about-btn scrollto">About The Event</a>
   </div>
@@ -29,11 +29,11 @@
         </div>
         <div class="col-lg-3">
           <h3>Where</h3>
-          <p>Chiang Dao ,Chiang Mai,Thailand</p>
+          <p>Doi Chang ,Chiang Rai,Thailand</p>
         </div>
         <div class="col-lg-3">
           <h3>When</h3>
-          <p>Monday to Wednesday<br>27-29 April 2022</p>
+          <p>Sunday<br> 1 May 2022</p>
         </div>
       </div>
     </div>
