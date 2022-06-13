@@ -204,7 +204,7 @@ class PlayersExport implements FromCollection,WithTitle ,WithHeadings,WithStartR
             //array_push($views, $view);
            
         }
-        $views = $views->sortBy('tAll');
+        
         //dd(   $views);
         return $views ;
 
