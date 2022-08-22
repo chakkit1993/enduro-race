@@ -14,8 +14,7 @@
                     <div class="col-md-6 ml-auto">
                    
                     <div class="form-group">
-                        <label for="exampleInputEmail1">จำนวนรถ</label>
-                        <input class="form-control " type="text" name="name" class="form-control" id="exampleInputEmail1">
+                     
                     </div>
                     </div>
                     <div class="col-md-6 ml-auto">
@@ -42,10 +41,10 @@
                     
                     <div class="col-md-6 ml-auto">
                     <div class="form-group">
-                        <label for="TimePerRound">เวลา ต่อ รอบ</label>
+                        <label for="TimePerRound">เวลา(วินาที) ต่อ รอบ</label>
                         <select class="form-control selectpicker show-tick"     data-live-search="true" id="TimePerRound" name="TimePerRound">
                             @for($x = 1; $x <= 5; $x++)
-                            <option value="{{$x * 30 }}">{{$x * 30}}</option>
+                            <option value="{{$x * 30 }}">{{$x * 30}}s</option>
                             @endfor
                         </select>
                     </div>

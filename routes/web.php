@@ -6,6 +6,7 @@ use App\Http\Controllers\PlayersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TournamentsController;
 use App\Http\Controllers\LiveController;
+use App\Http\Controllers\TimerController;
 
 use App\Tournament;
 use Illuminate\Contracts\Cache\Store;
@@ -85,8 +86,12 @@ Route::get('admin/api/players',[PlayersController::class,'getPlayers'])->name('a
 
 Route::resource('/admin/players','PlayersController');
 Route::get('/admin/players/details/{player}',[PlayersController::class,'details'])->name('players.details');
-Route::get('/admin/tournaments/{tournament}/players/{player}',[PlayersController::class,'myedit'])->name('players.myedit');
+Route::get('/admin/tournaments/{tournament}/players/{player}',[PlayersController::class,'editPlayer'])->name('players.editPlayer');
 Route::get('/admin/players/player-checkpoint/{player}',[PlayersController::class,'updateCheckpoint'])->name('players.updateCheckpoint');
+Route::get('/admin/tournaments/{tournament}/players10/{player}',[PlayersController::class,'editPlayers10'])->name('players.editPlayers10');
+
+Route::put('/admin/tournaments/{tournament}/players10/edit',[PlayersController::class,'update10'])->name('players.update10');
+
 
 // Route::get('/admin/players',[PlayersController::class,'index'])->name('admin.players');
 //Route::post('/admin/players/create',[PlayersController::class,'create'])->name('admin.players.create');
@@ -109,3 +114,5 @@ Route::post('/admin/players/import/{tournament}', 'ImportExcelController@importP
 
 
 Route::get('/export/timer', 'ImportExcelController@exportTimer')->name('timer.export');
+
+Route::get('/admin/tournaments/{tournament}/timers',[TimerController::class,'calculateTime'])->name('timer.calculateTime');

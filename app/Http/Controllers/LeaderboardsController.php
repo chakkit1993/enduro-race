@@ -60,10 +60,11 @@ class LeaderboardsController extends Controller
 
     // preparing an array
         $s = 'S1';
-        $tempData =  Leaderboard::all()->where('stage', 'S1' )->sortByDesc('tResult');
+        //$tempData =  Leaderboard::all()->where('stage', 'S1' );
+        //$tempData =  Leaderboard::all()->where('stage', 'S1' )->sortByDesc('tag_id');
         $data = new Collection();
 
-      
+        $tempData =  Leaderboard::all()->where('tour_id', $tournament->id );
         $n = 1;
         foreach($tempData as $_data){
             

@@ -40,9 +40,9 @@
                                     <th>Name</th>
                                     <th>Motorcycle No</th>
                                     <th>Tag RFID</th>
-                                    <th>T1</th>
-                                    <th>T2</th>
-                                    <th>TReuslt</th>
+                                    <th>Time Start</th>
+                                    <th>Time Finish</th>
+                                    <th>Time Reuslt</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>

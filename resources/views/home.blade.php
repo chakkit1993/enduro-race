@@ -82,11 +82,15 @@
                 <i class="fas fa-copy"></i></a>
 
               </div>
+              @if($tournament->img)
               <img src="{{$disk->url($tournament->img)}}" class="card-img-top" alt="..." style="width: 100%;  height: 10vw;    object-fit: scale-down; ">
-              <div class="card-body">
+              @else
+              <img src="\images\No_picture_available.png" class="card-img-top" alt="..." style="width: 100%;  height: 10vw;    object-fit: scale-down; ">
+              @endif
+              <div class="card-body">      
                 <h5 class="card-title">{{$tournament->name}}</h5>
                 <p class="card-text">{{$tournament->description}}</p>
-
+               
 
 
               </div>

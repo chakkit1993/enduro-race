@@ -16,6 +16,7 @@ class CreateLeaderboardsTable extends Migration
         Schema::create('leaderboards', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('player_id');
+            $table->unsignedBigInteger('tour_id');
             $table->string('stage');
             $table->string('t1');
             $table->string('t2');

@@ -41,6 +41,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::put('admin/leaderboards/update/{id}',[LedaerboardApiController::class,'updateAll'])->name('api.UpdateAllleaderboards');
 
+
+
+
 Route::get('admin/{tournament}/leaderboard','LeaderboardsController@getLeaderboardJSON');
 
 Route::get('admin/tournament/{tournament}/division/{division}',[PlayersApiController::class,'playerByDivisionJSON'])->name('api.playerBydivision');

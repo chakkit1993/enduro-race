@@ -25,4 +25,10 @@ class Tournament extends Model
         return $this->hasMany(Player::class);
     }
 
+    
+    public function leaderboards()
+    {
+        return $this->hasMany(LeaderBoard::class);
+    }
+
 }

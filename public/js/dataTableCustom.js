@@ -12,7 +12,7 @@
       var currentURL = $(location).attr('href').split('/'); 
       //console.log(currentURL);
       //console.log(currentURL);
-      var table = $('#tabelLeaderboard112').DataTable({
+      var table = $('#tabelLeaderboardAdmin').DataTable({
         //  "processing": true,
           // "serverSide": true,
         ajax: {
@@ -24,21 +24,19 @@
         columns: [
             { data: "no" },
             { data: "name" },
-            { data: "stage" },
+            // { data: "stage" },
             { data: "rfid" },
             { data: "t1" },
             { data: "t2" },
             { data: "tResult" },
             { data: "pc" },
             {
-              defaultContent: '<a  style="color:white" class="edit btn btn-success  float-left" value="edit"/>  <i class="fa fa-edit"></i> </a>'
- 
-            },
-            
+              defaultContent: '<a  style="color:white" class="edit btn btn-success  float-left" value="edit"/>  <i class="fa fa-edit"></i> </a> <a class="edit10 btn btn-warning  float-left" value="edit10"/> 10 Edit   </a>'
+            }, 
          
         ],
         columnDefs: [{
-          targets: 7,
+          targets: 6,
           render: function(pc, type, row, meta) {
 
             //console.log(pc);
@@ -86,7 +84,7 @@
 
 
       });
-      $('#tabelLeaderboard112 tbody').on( 'click', '.edit', function () {
+      $('#tabelLeaderboardAdmin tbody').on( 'click', '.edit', function () {
        // var row = $(this).closest('tr');
       
 
@@ -97,8 +95,20 @@
        
      } );
 
+     $('#tabelLeaderboardAdmin tbody').on( 'click', '.edit10', function () {
+      // var row = $(this).closest('tr');
+     
+
+      //console.log(data['player_id']);
+       var data = table.row( $(this).parents('tr') ).data();
+        var url = "players10/" + data['player_id'];
+       window.location.href = url;
+      
+    } );
+
+
      table.buttons().container()
-     .appendTo( '#tabelLeaderboard112_wrapper .col-md-6:eq(0)' );
+     .appendTo( '#tabelLeaderboardAdmin_wrapper .col-md-6:eq(0)' );
   
 
   });
@@ -192,55 +202,10 @@
           //   return str;
           // }
         },
-      //   {
-      //   targets: 6,
-      //   render: function(pc, type, row, meta) {
-
-      //     status ="";
-
-      //     if(pc['pc1']){
-      //       status =  '<span class="badge badge-success">PC1</span>'
-      //     }else{
-      //       status =  '<span class="badge badge-danger">PC1</span>'
-      //     }
-
-      //     if(pc['pc2']){
-      //       status +=  '<span class="badge badge-success">PC2</span>'
-      //     }else{
-      //       status +=  '<span class="badge badge-danger">PC2</span>' 
-      //     }
-        
-
-      //     if(pc['pc3']){
-      //       status +=  '<span class="badge badge-success">PC3</span>'
-      //     }else{
-      //       status +=  '<span class="badge badge-danger">PC3</span>' 
-      //     }
-        
-
-      //     if(pc['pc4']){
-      //       status +=  '<span class="badge badge-success">PC4</span>'
-      //     }else{
-      //       status +=  '<span class="badge badge-danger">PC4</span>' 
-      //     }
-        
-
-      //     if(pc['pc5']){
-      //       status +=  '<span class="badge badge-success">PC5</span>'
-      //     }else{
-      //       status +=  '<span class="badge badge-danger">PC5</span>' 
-      //     }
-        
-        
-         
-      //     return status;
-      //   }
-      // }
+    
     ]
 
       
-
-
     });
     $('#tabelLeaderboardFront tbody').on( 'click', '.edit', function () {
      // var row = $(this).closest('tr');

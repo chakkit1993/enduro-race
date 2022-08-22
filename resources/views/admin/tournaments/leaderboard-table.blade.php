@@ -40,7 +40,7 @@
                                 <tr>
                                      
                                     <td>{{$leaderboard->id}}</td>
-                                    <td>  </td>
+                                    <td>{{$leaderboard->player_id}}   </td>
                                     <td> {{$leaderboard->stage}}  </td>
                                     <td>   </td>
                                     <td>
@@ -62,17 +62,19 @@
                                 </tr>
                            @endforeach
                                 </tbody>
-                                <!-- <tfoot>
-                                <tr>
-                                    <th>Sl No.</th>
-                                    <th>User Role</th>
-                                    <th>User Name</th>
-                                    <th>Phone</th>
-                                    <th>Email</th>
-                                    <th>Address</th>
-                                    <th>Status</th>
-                                </tr>
-                                </tfoot> -->
+                                 <tfoot>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Name</th>
+                                        <th>Stage</th>
+                                        <th>Tag RFID</th>
+                                        <th>Check Point</th>
+                                        <th>Time Start</th>
+                                        <th>Time Finish</th>
+                                        <th>Time Result</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </tfoot> 
                             </table>
                             @else
                                 <h3 class="text text-center">No Players</h3>

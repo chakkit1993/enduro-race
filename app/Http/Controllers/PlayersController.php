@@ -66,9 +66,10 @@ class PlayersController extends Controller
         }
 
 
-        for($x = 1 ; $x < 6 ;$x++){
+        for($x = 1 ; $x < 2 ;$x++){
             $leader =  Leaderboard::create([
                 'player_id' => $player->id,
+                'tour_id'=>$tour_id,
                 't1' => '00:00:00',
                 't2' => '00:00:00',
                 'tResult' => '00:00:00',
@@ -130,7 +131,7 @@ class PlayersController extends Controller
      */
     public function update(Request $request,Player $player)
     {
-
+        
         // dd($request->all());
         $data = $request->only(['name', 'phone', 'no' , 'tag_id']);
 
@@ -226,9 +227,12 @@ class PlayersController extends Controller
         }
        
 
-        Session()->flash('success', 'แก้ไขข้อมูลสำเร็จ');
+        // Session()->flash('success', 'แก้ไขข้อมูลสำเร็จ');
+        // return redirect(route('tournaments.show',$player->tour_id));
 
-        return redirect(route('tournaments.show',$player->tour_id));
+        Session()->flash('success', 'แก้ไขข้อมูลสำเร็จ');
+        return redirect(route('tournaments.leaderboards' , $player->tour_id));
+        
     }
 
     /**
@@ -287,7 +291,7 @@ class PlayersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function myedit(Tournament $tournament, Player $player)
+    public function editPlayer(Tournament $tournament, Player $player)
     {
         //dd($tournament->id);
         return view('admin.tournaments.editForm-player')        
@@ -319,6 +323,103 @@ class PlayersController extends Controller
         ->with('division', $division)
         ->with('players', $players);
         
+    }
+
+               /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function editPlayers10(Tournament $tournament, Player $player)
+    {
+
+     
+
+
+        if($player->no < 0) {
+            Session()->flash('error', 'failed');
+            return    back();
+        }
+        $players = collect([]);
+        //get last plater 
+        $last_player = Player::all()->where('tour_id', $tournament->id)->sortByDesc('no')->first();
+        //dd( $last_player );
+
+
+        //take 5 player
+        for($i = 0 ; $i < 5 ; $i++){
+            if($player->no + $i > $last_player->no) break;
+
+            $item = Player::all()->where('tour_id', $tournament->id)->where('no',$player->no + $i)->first();
+            $players->push($item);
+       
+        }
+      
+
+        //$players = Player::all()->where('tour_id', $tournament->id)->take(5);
+        //dd($players);
+        //$leaderboards =  $player->findLeaderboards($player->id);
+        //dd( $players );
+        return view('admin.tournaments.editForm-players10')        
+        ->with('players', $players)
+        ->with('tournament',$tournament)
+        ->with('divisions', Division::all()->where('tour_id', $tournament->id));
+        
+
+    }
+               /**
+     * update the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update10(Request $request )
+    {
+
+     
+
+ 
+
+            //dd($request->all());
+           //$data = $request->only(['name', 'phone', 'no' , 'tag_id']);
+            $count = $request->count_player;
+            $tour_id = $request->tour_id;
+           for($x =  0 ; $x <   $count ;$x++){
+           
+            $player_id = '_player_id'.$x;
+            $player_name = '_name'.$x;
+            $player_phone = '_phone'.$x;
+            $player_division_id = '_division_id'.$x;
+           // dd($request->$t);
+            $player = Player::all()->where('id',$request->$player_id)->first();
+          
+            
+             //dd($request->$player_division_id);
+           $array =   $request->$player_division_id;
+
+           //dd( $array);
+           //dd($player);
+
+           if ($array) {
+               $player->divisions()->sync($array);
+           }
+         
+           $player->name =  $request->$player_name;
+           $player->phone =  $request->$player_phone;
+           $player->save();
+
+           }
+
+   
+           //dd($players);
+
+           //$player->update($data);
+
+
+        Session()->flash('success', 'แก้ไขข้อมูลสำเร็จ');
+        return redirect(route('tournaments.leaderboards' , $tour_id));
+        //return redirect(route('tournaments.show',$tour_id));
     }
 
 

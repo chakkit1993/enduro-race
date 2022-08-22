@@ -54,28 +54,12 @@ class PlayersExport implements FromCollection,WithTitle ,WithHeadings,WithStartR
         return[
             'ชื่อ',
             'หมายเลขรถ',
-            'rfid',
+            //'RFID',
             'Stage',
-            'TStart',
-            'TFinish',
-            'TResult',
-            'Stage',
-            'TStart',
-            'TFinish',
-            'TResult',
-            'Stage',
-            'TStart',
-            'TFinish', 
-            'TResult',
-            'Stage',
-            'TStart',
-            'TFinish',
-            'TResult',
-            'Stage',
-            'TStart',
-            'TFinish',
-            'TResult',
-            'ผลรวมS1-S5',
+            'Time Start',
+            'Time Finish',
+            'Time Result',
+            //'ผลรวมS1-S5',
         ];
 
         // return[
@@ -174,31 +158,14 @@ class PlayersExport implements FromCollection,WithTitle ,WithHeadings,WithStartR
             $view =[
                 'name' => $player['name'],
                 'no' => $player['no'],
-                'rfid' => $player['tag_id'],
+                //'rfid' => $player['tag_id'],
                 'stage_1'=>  $tacks[$n]['stage'],
                 't1_1'=>  $tacks[$n]['t1'],
                 't2_1'=> $tacks[$n]['t2'],
-                'tResult_1'=> $tacks[$n]['tResult'],
-                'stage_2'=>  $tacks[$n+1]['stage'],
-                't1_2'=>  $tacks[$n+1]['t1'],
-                't2_2'=> $tacks[$n+1]['t2'],
-                'tResult_2'=>  $tacks[$n+1]['tResult'],
-                'stage_3'=>  $tacks[$n+2]['stage'],
-                't1_3'=>  $tacks[$n+2]['t1'],
-                't2_3'=> $tacks[$n+2]['t2'],
-                'tResult_3'=>  $tacks[$n+2]['tResult'],
-                'stage_4'=>  $tacks[$n+3]['stage'],
-                't1_4'=>  $tacks[$n+3]['t1'],
-                't2_4'=> $tacks[$n+3]['t2'],
-                'tResult_4'=>  $tacks[$n+3]['tResult'],
-                'stage_5'=>  $tacks[$n+4]['stage'],
-                't1_5'=>  $tacks[$n+4]['t1'],
-                't2_5'=> $tacks[$n+4]['t2'],
-                'tResult_5'=>  $tacks[$n+4]['tResult'],
+                //'tResult_1'=> $tacks[$n]['tResult'],
                 'tAll' =>  $timeS1_S5 ,
             ];
 
-            $n = $n+5;
             $views[] = $view;
          
             //array_push($views, $view);

@@ -13,12 +13,17 @@ class Leaderboard extends Model
      * @var array
      */
     protected $fillable = [
-        'player_id', 'stage', 't1', 't2', 'tResult','time_pc0', 'time_pc1', 'time_pc2', 'time_pc3', 'time_pc4', 'time_pc5', 'time_pc6'
+        'player_id', 'tour_id', 'stage', 't1', 't2', 'tResult','time_pc0', 'time_pc1', 'time_pc2', 'time_pc3', 'time_pc4', 'time_pc5', 'time_pc6'
     ];
 
 
-    public function players(){
+  public function players(){
         return $this->belongsTo(Player::class);
+  }
+
+  public function tournament()
+  {
+      return $this->belongsTo(Tournament::class);
   }
   
   public function findPlayer($id)

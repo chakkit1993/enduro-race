@@ -91,6 +91,7 @@ class PlayersImport implements ToModel,WithStartRow,WithChunkReading,ToCollectio
                 for($x = 1 ; $x < 6 ;$x++){
                     $leader =  Leaderboard::create([
                         'player_id' => $player->id,
+                        'tour_id'=>$tour_id,
                         't1' => '00:00:00',
                         't2' => '00:00:00',
                         'tResult' => '00:00:00',

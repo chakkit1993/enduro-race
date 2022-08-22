@@ -46,7 +46,7 @@
                                       </td>
                                       <td>  
                                         <?php $tournament= 1;  ?>
-                                      <a id="{{$player->id}}" href="{{route('players.myedit',['tournament'=> $tournament,'player' =>$player])}}" class="btn btn-success  float-left  ">
+                                      <a id="{{$player->id}}" href="{{route('players.editPlayer',['tournament'=> $tournament,'player' =>$player])}}" class="btn btn-success  float-left  ">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <form class="delete_form" action="{{route('players.destroy',$player->id)}}" method="post">

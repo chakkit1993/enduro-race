@@ -115,14 +115,15 @@ class TournamentsController extends Controller
             $path = $request->file('image')->store('images');
             $image = $path;//$request->image->store('posts');
         }else{
-            $image = public_path('/images/No_picture_available.png');
+            // $image = public_path('\images\No_picture_available.png');
+            $image = "";
         }
      
         
 
       
          $ldate = date('Y-m-d H:i:s');
-      
+         $tournamentCode = 0 ;
         // dd($code);
         $tournament = Tournament::create([
             'code'=> '',
@@ -143,7 +144,8 @@ class TournamentsController extends Controller
 
         //$colors =  Config::get('constants.color');
 
-        //dd( $colors[1]);
+        $tournamentCode = $tournament->code;
+        $class_1st = 0 ;
         $classes =  Config::get('constants.class');
         // create Class demo 
             for($x = 0 ; $x < 20 ; $x++){
@@ -167,14 +169,61 @@ class TournamentsController extends Controller
                 $division->update(([
                     'code'=>$code,
                 ]));
-
                 
+                //get frist class 
+                if($x == 0 )
+                $class_1st = $division->id;
             }
   
+        // //create temp players
+            $image = 'image_path';//$request->image->store('posts');
+ 
+            $ldate = date('Y-m-d H:i:s');
+            $tour_id = $tournament->id;
 
-        
-        
+            $temp_player_count = 500;
+           for( $count = 0 ; $count < $temp_player_count ; $count++){
+
+            
+            $player = Player::create([
+                  'name' => "player".$count,
+                  'phone' => "0",
+                  'no'=>$count+1,
+                  'tag_id'=>$count+1,
+                  'tour_id'=>$tour_id,
+                  'img' => $image,
+                  'create_date' => $ldate,
+                  'create_by' => auth()->user()->name
+              ]);
+             
+            $player->divisions()->attach( $class_1st);
+  
     
+    
+            for($x = 1 ; $x < 2 ;$x++){
+                $leader =  Leaderboard::create([
+                    'player_id' => $player->id,
+                    'tour_id' => $tour_id,
+                    't1' => '00:00:00',
+                    't2' => '00:00:00',
+                    'tResult' => '00:00:00',
+                    'time_pc0' => '00:00:00',
+                    'time_pc1' => '00:00:00',
+                    'time_pc2' => '00:00:00',
+                    'time_pc3' => '00:00:00',
+                    'time_pc4' => '00:00:00',
+                    'time_pc5' => '00:00:00',
+                    'time_pc6' => '00:00:00',
+                    
+                    'stage'=>'S'.$x,
+                   
+               ]);
+               
+            }
+          
+    
+        }
+        // end create temp players
 
 
        
@@ -364,15 +413,22 @@ class TournamentsController extends Controller
     public function destroy(Tournament $tournament)
     {
         //$tournament->tags()->detach($tournament->post_id);
-        $count =  Player::all()->where('tour_id', $tournament->id)->count();
+        $players =  Player::all()->where('tour_id', $tournament->id);
       
-        if(   $count  != 0 ){
-            Session()->flash('error', 'กรุณาลบข้อมูลผู้เข้าร่วมการแข่งขัน');
-            return redirect(route('home'));
+
+        if(   $players->count()){
+            foreach($players as $player) {
+                $player->delete();
+               }
         }else{
-
-
-            
+            Session()->flash('error', 'ไม่มีข้อมูลผู้เข้ามร่วม');
+        }
+      
+        
+        // if(   $count  != 0 ){
+        //     Session()->flash('error', 'กรุณาลบข้อมูลผู้เข้าร่วมการแข่งขัน');
+        //     return redirect(route('home'));
+        // }else{
 
               // upload picture to google cloud storage
               $disk = Storage::disk('gcs');
@@ -387,10 +443,10 @@ class TournamentsController extends Controller
            }
             $tournament->delete();
             //$tournament->deleteImage();
-            Session()->flash('success', 'ลบข้อมูลสำเร็จ');
+            Session()->flash('success', 'ลบข้อมูล Tournament สำเร็จ');
     
             return redirect(route('home'));
-        }
+        // }
 
        
 
@@ -457,6 +513,7 @@ class TournamentsController extends Controller
     }
 
 
+    // delete 50 users
     public function deleteAll(Request $request , Tournament $tournament)
     {   $players = Player::all()->where('tour_id', $tournament->id)->take(50);
 
