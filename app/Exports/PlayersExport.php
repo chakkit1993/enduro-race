@@ -165,7 +165,7 @@ class PlayersExport implements FromCollection,WithTitle ,WithHeadings,WithStartR
                 //'tResult_1'=> $tacks[$n]['tResult'],
                 'tAll' =>  $timeS1_S5 ,
             ];
-
+            $n++;
             $views[] = $view;
          
             //array_push($views, $view);
